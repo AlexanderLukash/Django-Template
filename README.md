@@ -1,6 +1,7 @@
 # Django Project Boilerplate
 
-This is a template for a Django project that uses Docker Compose, a Makefile for task automation, and PostgreSQL as the database.
+This is a template for a Django project that uses Docker Compose, a Makefile for task automation, and PostgreSQL as the
+database.
 
 ## Requirements
 
@@ -21,10 +22,17 @@ Before using this project, make sure you have the following components installed
 2. Use the command `make app` to build Docker containers and start the project.
 3. Open your browser and go to `http://localhost:8000/` to view the project.
 
-## Useful Commands
+## Implemented Commands
 
 - `make app`: Start the project.
-- `make app-down`: Stop the project.
+- `make app-logs`: Follow the logs in app container.
+- `make app-down`: Stop application and all infrastructure.
+- `make storages`: Up only storages. you should run your application locally for debugging/developing purposes
+- `make storages-logs`: Follow the logs in storages containers
+- `make storages-down`: Stop all infrastructure
+
+## Most Used Django Specific Commands
+
 - `make migrate`: Apply Django migrations to the database.
 - `make migrations`: To create database migration files based on the changes you've made to your models.
 - `make superuser`: Create a Django superuser.
