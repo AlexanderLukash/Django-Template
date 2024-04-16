@@ -1,5 +1,5 @@
 # Django Project Boilerplate
-
+![Cover Image](/assets/cover.png)
 This is a template for a Django project that uses Docker Compose, a Makefile for task automation, and PostgreSQL as the
 database.
 
